@@ -135,20 +135,20 @@ namespace ContosoUniversity.Data
             {
                 new OfficeAssignment {
                     Instructor = fakhouri,
-                    Location = "Smith 17" },
+                    Location = "Wichita, KS" },
                 new OfficeAssignment {
                     Instructor = harui,
-                    Location = "Gowan 27" },
+                    Location = "New York City, New York" },
                 new OfficeAssignment {
                     Instructor = kapoor,
-                    Location = "Thompson 304" }
+                    Location = "Houston, Texas" }
             };
 
             context.AddRange(officeAssignments);
 
             var english = new Department
             {
-                Name = "English",
+                Name = "Salary",
                 Budget = 350000,
                 StartDate = DateTime.Parse("2007-09-01"),
                 Administrator = abercrombie
@@ -156,7 +156,7 @@ namespace ContosoUniversity.Data
 
             var mathematics = new Department
             {
-                Name = "Mathematics",
+                Name = "Salary",
                 Budget = 100000,
                 StartDate = DateTime.Parse("2007-09-01"),
                 Administrator = fakhouri
@@ -164,7 +164,7 @@ namespace ContosoUniversity.Data
 
             var engineering = new Department
             {
-                Name = "Engineering",
+                Name = "Salary",
                 Budget = 350000,
                 StartDate = DateTime.Parse("2007-09-01"),
                 Administrator = harui
@@ -172,7 +172,7 @@ namespace ContosoUniversity.Data
 
             var economics = new Department
             {
-                Name = "Economics",
+                Name = "Salary",
                 Budget = 100000,
                 StartDate = DateTime.Parse("2007-09-01"),
                 Administrator = kapoor
@@ -191,8 +191,8 @@ namespace ContosoUniversity.Data
             var chemistry = new Course
             {
                 CourseID = 1050,
-                Title = "Chemistry",
-                Credits = 3,
+                Title = "Shopping",
+                //Credits = 3,
                 Department = engineering,
                 Instructors = new List<Instructor> { kapoor, harui }
             };
@@ -200,8 +200,8 @@ namespace ContosoUniversity.Data
             var microeconomics = new Course
             {
                 CourseID = 4022,
-                Title = "Microeconomics",
-                Credits = 3,
+                Title = "Lifting",
+                //Credits = 3,
                 Department = economics,
                 Instructors = new List<Instructor> { zheng }
             };
@@ -209,8 +209,8 @@ namespace ContosoUniversity.Data
             var macroeconmics = new Course
             {
                 CourseID = 4041,
-                Title = "Macroeconomics",
-                Credits = 3,
+                Title = "Biking",
+                //Credits = 3,
                 Department = economics,
                 Instructors = new List<Instructor> { zheng }
             };
@@ -218,8 +218,8 @@ namespace ContosoUniversity.Data
             var calculus = new Course
             {
                 CourseID = 1045,
-                Title = "Calculus",
-                Credits = 4,
+                Title = "Photography",
+                //Credits = 4,
                 Department = mathematics,
                 Instructors = new List<Instructor> { fakhouri }
             };
@@ -227,8 +227,8 @@ namespace ContosoUniversity.Data
             var trigonometry = new Course
             {
                 CourseID = 3141,
-                Title = "Trigonometry",
-                Credits = 4,
+                Title = "Eating out",
+                //Credits = 4,
                 Department = mathematics,
                 Instructors = new List<Instructor> { harui }
             };
@@ -236,8 +236,8 @@ namespace ContosoUniversity.Data
             var composition = new Course
             {
                 CourseID = 2021,
-                Title = "Composition",
-                Credits = 3,
+                Title = "Off-roading",
+                //Credits = 3,
                 Department = english,
                 Instructors = new List<Instructor> { abercrombie }
             };
@@ -245,8 +245,8 @@ namespace ContosoUniversity.Data
             var literature = new Course
             {
                 CourseID = 2042,
-                Title = "Literature",
-                Credits = 4,
+                Title = "Fishing",
+                //Credits = 4,
                 Department = english,
                 Instructors = new List<Instructor> { abercrombie }
             };

@@ -122,11 +122,11 @@ namespace ContosoUniversity.Pages.Departments
                 ModelState.AddModelError("Department.Name",
                     $"Current value: {dbValues.Name}");
             }
-            if (dbValues.Budget != clientValues.Budget)
+            /*if (dbValues.Budget != clientValues.Budget)
             {
                 ModelState.AddModelError("Department.Budget",
                     $"Current value: {dbValues.Budget:c}");
-            }
+            }*/
             if (dbValues.StartDate != clientValues.StartDate)
             {
                 ModelState.AddModelError("Department.StartDate",
